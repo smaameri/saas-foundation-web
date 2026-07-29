@@ -11,6 +11,7 @@ import {
   siZod,
   type SimpleIcon,
 } from "simple-icons";
+import DemoDialog from "./demo-dialog";
 
 const features = [
   {
@@ -102,7 +103,7 @@ export default function Home() {
         <div className="hidden items-center gap-8 text-sm text-[#91a09c] md:flex">
           <a href="#features" className="transition-colors hover:text-white">Features</a>
           <a href="#stack" className="transition-colors hover:text-white">Stack</a>
-          <a href="https://demo.saasfoundation.dev" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition-colors hover:text-white"><span className="size-1.5 rounded-full bg-primary" />Live demo</a>
+          <DemoDialog />
         </div>
         <a
           href="https://github.com/smaameri/saas-foundation"
