@@ -11,6 +11,7 @@ import {
   siZod,
   type SimpleIcon,
 } from "simple-icons";
+import Image from "next/image";
 import DemoDialog from "./demo-dialog";
 
 const features = [
@@ -97,12 +98,13 @@ export default function Home() {
     <main className="overflow-hidden bg-[#050706] text-[#f3f7f6]">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Main navigation">
         <a href="#" className="flex items-center gap-3 font-semibold tracking-tight">
-          <span className="grid size-8 place-items-center rounded-lg border border-white/10 bg-[#111816] text-sm font-bold text-primary">SF</span>
+          <Image src="/logo.png" alt="" width={32} height={32} className="rounded-lg" />
           <span>SaaS Foundation</span>
         </a>
         <div className="hidden items-center gap-8 text-sm text-[#91a09c] md:flex">
           <a href="#features" className="transition-colors hover:text-white">Features</a>
           <a href="#stack" className="transition-colors hover:text-white">Stack</a>
+          <a href="https://docs.saasfoundation.dev" className="transition-colors hover:text-white">Docs</a>
           <DemoDialog />
         </div>
         <a
