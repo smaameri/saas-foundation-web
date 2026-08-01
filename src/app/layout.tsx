@@ -31,6 +31,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">{children}</body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
+      <Script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="d4b3fdc1-b015-429b-8bef-5b8e7e68cd55"
+      />
     </html>
   );
 }
