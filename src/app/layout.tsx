@@ -29,6 +29,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <Script
+        defer
+        strategy="beforeInteractive"
+        data-website-id="17f190fa-ec95-43d0-a1cf-2ab704b446ff"
+        src="https://www.driftmetrics.io/tracker.js"
+      />
       <body className="min-h-full flex flex-col">{children}</body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
       <Script
